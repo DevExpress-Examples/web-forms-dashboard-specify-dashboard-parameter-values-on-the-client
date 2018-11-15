@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/ASPxDashboard_SetParameterValues/Default.aspx) (VB: [Default.aspx.vb](./VB/ASPxDashboard_SetParameterValues/Default.aspx.vb))
+* [Default.aspx.cs](./CS/ASPxDashboard_SetParameterValues/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxDashboard_SetParameterValues/Default.aspx.vb))
+* [ParameterValues.js](./CS/ASPxDashboard_SetParameterValues/Scripts/ParameterValues.js) (VB: [ParameterValues.js](./VB/ASPxDashboard_SetParameterValues/Scripts/ParameterValues.js))
+<!-- default file list end -->
 # ASPxDashboard - How to specify dashboard parameter values on the client side
 
 
