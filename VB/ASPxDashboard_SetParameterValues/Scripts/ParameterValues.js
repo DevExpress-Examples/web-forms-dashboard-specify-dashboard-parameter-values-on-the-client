@@ -1,19 +1,36 @@
-function setParameterValues() {
-    $("#setParameterValuesButton").dxButton({
-        text: 'Specify parameter values',
-        onClick: function () {
-            var parameters = webViewer.GetParameters();
-            var parameter1 = parameters.GetParameterByName("categoryParameter"),
-                parameter2 = parameters.GetParameterByName("startDateParameter");
-            parameter1.SetValue("Condiments");
-            parameter2.SetValue(new Date(2015, 3, 1));            
-        }
-    });
+function onBeforeRender(s) {
+    var dashboardControl = s.GetDashboardControl();
+    if (dashboardControl) {
+        dashboardControl.on('dashboardEndUpdate', function () { setParameterValues(dashboardControl); })
+    }
+}
 
-    $("#showParametersForm").dxButton({
-        text: 'Show Parameters Form',
+function setParameterValues(control) {
+    var parameterDialogExt = control.findExtension('dashboardParameterDialog');
+    $("#setParameterValuesButton").dxButton({
+        text: 'Specify Parameter Values',
         onClick: function () {
-            webViewer.ShowParametersDialog();
+            var parameters = parameterDialogExt.getParameters();
+            var paramCategory = parameters.getParameterByName("categoryParameter"),
+                paramStartDate = parameters.getParameterByName("startDateParameter");
+            paramCategory.setValue("Condiments");
+            paramStartDate.setValue(new Date(2015, 3, 1));
         }
     });
-};
+    $("#resetParameterValuesButton").dxButton({
+        text: 'Reset Parameter Values',
+        onClick: function () {
+            var parameters = parameterDialogExt.getParameters();
+            var paramCategory = parameters.getParameterByName("categoryParameter"),
+                paramStartDate = parameters.getParameterByName("startDateParameter");
+            paramCategory.setValue(paramCategory.getDefaultValue());
+            paramStartDate.setValue(paramStartDate.getDefaultValue());
+        }
+    });
+    $("#showParametersDialog").dxButton({
+        text: 'Show Parameters Dialog',
+        onClick: function () {
+            parameterDialogExt.show();
+        }
+    });
+}
