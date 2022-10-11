@@ -12,7 +12,7 @@
 <!-- default file list end -->
 # ASPxDashboard - How to specify dashboard parameter values on the client side
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t495684/)**
+**[[Run Online]](https://codecentral.devexpress.com/128580011/)**
 <!-- run online end -->
 
 
