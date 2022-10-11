@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Dashboard for Web Forms - How to specify dashboard parameter values on the client side
+# Dashboard for Web Forms - How to specify dashboard parameter values on the client
 
 This example shows how to change dashboard parameter values in the ASPxDashboard control on the [client]([https://documentation.devexpress.com/#Dashboard/CustomDocument116302](https://docs.devexpress.com/Dashboard/116302/web-dashboard/aspnet-web-forms-dashboard-control/client-side-api-overview)). 
 
