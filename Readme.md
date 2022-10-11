@@ -3,18 +3,23 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T495684)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/ASPxDashboard_SetParameterValues/Default.aspx) (VB: [Default.aspx](./VB/ASPxDashboard_SetParameterValues/Default.aspx))
-* [Default.aspx.cs](./CS/ASPxDashboard_SetParameterValues/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxDashboard_SetParameterValues/Default.aspx.vb))
+# Dashboard for Web Forms - How to specify dashboard parameter values on the client side
+
+This example shows how to change dashboard parameter values in the ASPxDashboard control on the [client]([https://documentation.devexpress.com/#Dashboard/CustomDocument116302](https://docs.devexpress.com/Dashboard/116302/web-dashboard/aspnet-web-forms-dashboard-control/client-side-api-overview)). 
+
+This example uses the following methods:
+
+- [DashboardParameterDialogExtension.getParameters](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardParameterDialogExtension?p=netframework#js_devexpress_dashboard_dashboardparameterdialogextension_getparameters) - obtains the dashboard parameter settings and metadata.
+- [DashboardParameter.setValue](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardParameter#js_devexpress_dashboard_dashboardparameter_setvalue_value_) - specifies the dashboard parameter value on the client. 
+- [DashboardParameter.getDefaultValue](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardParameter#js_devexpress_dashboard_dashboardparameter_getdefaultvalue) - returns a default parameter value. 
+- [DashboardParameterDialogExtension.show](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardParameterDialogExtension#js_devexpress_dashboard_dashboardparameterdialogextension_show) - invokes the Dashboard Parameters dialog that displays applied parameter values.
+
+## Files to Review
+
 * [ParameterValues.js](./CS/ASPxDashboard_SetParameterValues/Scripts/ParameterValues.js) (VB: [ParameterValues.js](./VB/ASPxDashboard_SetParameterValues/Scripts/ParameterValues.js))
-<!-- default file list end -->
-# ASPxDashboard - How to specify dashboard parameter values on the client side
+* [Default.aspx](./CS/ASPxDashboard_SetParameterValues/Default.aspx) (VB: [Default.aspx](./VB/ASPxDashboard_SetParameterValues/Default.aspx))
 
+## Documentation
 
-This example demonstrates how to change dashboard parameter values in the ASPxDashboard control on the <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument116302">client side</a> using the <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_GetParameterstopic">ASPxClientDashboard.GetParameters</a> method.<br>In this example, parameter values are specified using the <a href="http://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboardParameter_SetValuetopic">ASPxClientDashboardParameter.SetValue</a> method. The <a href="https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_ShowParametersDialogtopic">ASPxClientDashboard.ShowParametersDialog</a> method is used to invoke the Dashboard Parameters dialog that displays applied parameter values.
-
-<br/>
-
-
+- [Dashboard Parameters on the Web](https://docs.devexpress.com/Dashboard/117062/web-dashboard/create-dashboards-on-the-web/data-analysis/dashboard-parameters)
