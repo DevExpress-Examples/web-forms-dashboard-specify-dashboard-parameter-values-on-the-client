@@ -6,7 +6,7 @@
 
 # Dashboard for Web Forms - How to specify dashboard parameter values on the client
 
-This example shows how to change dashboard parameter values in the ASPxDashboard control on the [client]([https://documentation.devexpress.com/#Dashboard/CustomDocument116302](https://docs.devexpress.com/Dashboard/116302/web-dashboard/aspnet-web-forms-dashboard-control/client-side-api-overview)). 
+This example shows how to change dashboard parameter values in the ASPxDashboard control on the [client](https://docs.devexpress.com/Dashboard/116302/web-dashboard/aspnet-web-forms-dashboard-control/client-side-api-overview). 
 
 This example uses the following methods:
 
